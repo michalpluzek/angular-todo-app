@@ -1,5 +1,7 @@
 # AngularTodoApp
 
+This code is reproduce from YouTube video from Devstackr https://www.youtube.com/watch?v=gvWxMQ_Zios&list=PLIjdNHWULhPQ2JUw3SX5mPCmjLGWmXqnu&index=5&ab_channel=Devstackr
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.9.
 
 ## Development server

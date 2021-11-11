@@ -114,9 +114,15 @@
       }
 
       &.is-danger {
-        &:active {
+        &:hover {
           i.material-icons {
             color: rgb(155, 27, 27);
+          }
+        }
+
+        &:active {
+          i.material-icons {
+            color: rgb(189, 37, 37);
           }
         }
       }

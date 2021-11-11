@@ -12,6 +12,12 @@
 
 .container {
   max-width: 800px !important;
+
+  &.add-todo-box-container {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
 }
 
 .add-todo-box {

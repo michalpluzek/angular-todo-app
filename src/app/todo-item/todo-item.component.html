@@ -1,4 +1,8 @@
-<div class="todo-item" [class.completed]="todo.completed">
+<div
+  class="todo-item"
+  (click)="onTodoClick()"
+  [class.completed]="todo.completed"
+>
   <div class="check-box">
     <i class="material-icons">check</i>
   </div>

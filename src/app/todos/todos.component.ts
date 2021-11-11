@@ -24,6 +24,7 @@ export class TodosComponent implements OnInit {
       return;
     }
     this.dataService.addTodo(new Todo(form.value.text));
+    this.showValidationErrors = false;
     form.reset();
   }
 }

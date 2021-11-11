@@ -7,10 +7,21 @@
           type="text"
           class="input"
           [ngModel]="todo.text"
+          #todoTextField="ngModel"
           name="text"
+          required
+          minlength="2"
           placeholder="Type new todo text here..."
         />
       </div>
+    </div>
+    <div *ngIf="todoTextField.invalid">
+      <p class="help is-danger" *ngIf="todoTextField.errors?.required">
+        Please enter the text of your todo.
+      </p>
+      <p class="help is-danger" *ngIf="todoTextField.errors?.minlength">
+        Todo text mast be at least 2 charackters.
+      </p>
     </div>
     <br />
     <div class="field is-grouped is-grouped-right">

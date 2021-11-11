@@ -5,7 +5,13 @@ import { Todo } from './todo.model';
   providedIn: 'root',
 })
 export class DataService {
-  todos: Todo[] = [];
+  todos: Todo[] = [
+    new Todo(`this is a test!`, true),
+    new Todo(`Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates id
+    iusto qui libero, culpa nulla consectetur nisi hic facere quis, eum
+    voluptas reprehenderit quasi voluptatibus dolor alias placeat natus
+    quo?`),
+  ];
 
   constructor() {}
 

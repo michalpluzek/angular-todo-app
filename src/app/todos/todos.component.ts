@@ -37,8 +37,6 @@ export class TodosComponent implements OnInit {
   editTodo(todo: Todo) {
     const index = this.todos.indexOf(todo);
 
-    // this.dataService.updateTodo(index, new Todo(todo.text));
-
     let dialogRef = this.dialog.open(EditTodoDialogComponent, {
       width: '700px',
       data: todo,
@@ -49,5 +47,10 @@ export class TodosComponent implements OnInit {
         this.dataService.updateTodo(index, result);
       }
     });
+  }
+
+  deleteTodo(todo: Todo) {
+    const index = this.todos.indexOf(todo);
+    this.dataService.deleteTodo(index);
   }
 }

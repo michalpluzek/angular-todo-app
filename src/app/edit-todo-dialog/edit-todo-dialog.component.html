@@ -6,6 +6,8 @@
         <input
           type="text"
           class="input"
+          [ngModel]="todo.text"
+          name="text"
           placeholder="Type new todo text here..."
         />
       </div>
@@ -19,7 +21,10 @@
       </div>
 
       <div class="control">
-        <button type="submit" class="button is-light">Save</button>
+        <button type="submit" class="button alt-gradient-button">
+          <i class="material-icons">save</i>
+          Save
+        </button>
       </div>
     </div>
   </form>
